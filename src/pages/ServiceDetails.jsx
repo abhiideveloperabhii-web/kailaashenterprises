@@ -60,10 +60,9 @@ export default function ServiceDetails() {
               </Button>
               <Button
                 href={`tel:${COMPANY.phoneRaw}`}
-                variant="secondary"
+                variant="outline-white"
                 size="md"
                 icon="PhoneCall"
-                className="bg-white/10 text-white border-white/20 hover:bg-white hover:text-[#170A2C]"
               >
                 Call Specialist
               </Button>
@@ -192,11 +191,10 @@ export default function ServiceDetails() {
 
                   <Button
                     href={`tel:${COMPANY.phoneRaw}`}
-                    variant="secondary"
+                    variant="outline-white"
                     fullWidth
                     size="md"
                     icon="PhoneCall"
-                    className="bg-white/10 text-white border-white/20 hover:bg-white hover:text-[#170A2C]"
                   >
                     Call: {COMPANY.phoneDisplay}
                   </Button>

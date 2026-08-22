@@ -7,7 +7,7 @@ export default function Button({
   to,
   href,
   onClick,
-  variant = 'primary', // 'primary' | 'secondary' | 'gold' | 'whatsapp' | 'ghost' | 'dark'
+  variant = 'primary', // 'primary' | 'secondary' | 'gold' | 'whatsapp' | 'ghost' | 'dark' | 'outline-white'
   size = 'md', // 'sm' | 'md' | 'lg'
   icon,
   iconRight,
@@ -26,12 +26,13 @@ export default function Button({
   }[size];
 
   const variantStyles = {
-    primary: "bg-[#32105F] text-white hover:bg-[#240A44] shadow-md hover:shadow-xl hover:-translate-y-0.5 border border-[#32105F]",
+    primary: "bg-[#32105F] text-white hover:bg-[#240A44] hover:text-white shadow-md hover:shadow-xl hover:-translate-y-0.5 border border-[#32105F]",
     secondary: "bg-white text-[#32105F] border-2 border-[#32105F] hover:bg-[#32105F] hover:text-white shadow-sm hover:shadow-md hover:-translate-y-0.5",
-    gold: "bg-[#D7A72E] text-[#170A2C] hover:bg-[#E5B53C] shadow-md hover:shadow-lg hover:-translate-y-0.5 border border-[#D7A72E]",
-    whatsapp: "bg-[#25D366] text-white hover:bg-[#1EBE5D] shadow-md hover:shadow-xl hover:-translate-y-0.5 border border-[#25D366]",
-    dark: "bg-[#170A2C] text-white hover:bg-[#261048] border border-[#32105F] shadow-lg hover:-translate-y-0.5",
+    gold: "bg-[#D7A72E] text-[#170A2C] hover:bg-[#E5B53C] hover:text-[#170A2C] shadow-md hover:shadow-lg hover:-translate-y-0.5 border border-[#D7A72E]",
+    whatsapp: "bg-[#25D366] text-white hover:bg-[#1EBE5D] hover:text-white shadow-md hover:shadow-xl hover:-translate-y-0.5 border border-[#25D366]",
+    dark: "bg-[#170A2C] text-white hover:bg-[#261048] hover:text-white border border-[#32105F] shadow-lg hover:-translate-y-0.5",
     ghost: "bg-transparent text-[#32105F] hover:bg-[#E8E2EE]/40 border border-transparent",
+    'outline-white': "bg-white/10 text-white border border-white/30 hover:bg-white hover:text-[#170A2C] shadow-sm hover:shadow-md hover:-translate-y-0.5",
   }[variant];
 
   const combinedClasses = `${baseStyles} ${sizeStyles} ${variantStyles} ${fullWidth ? 'w-full' : ''} ${className}`;
