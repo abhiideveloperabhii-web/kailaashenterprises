@@ -40,49 +40,58 @@ export default function ServicesPreview() {
           ))}
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        {/* Services Grid with Rich Image Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredServices.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-3xl p-5 sm:p-6 border border-[#E8E2EE] service-card-hover flex flex-col justify-between group shadow-xs"
+              className="bg-white rounded-3xl overflow-hidden border border-[#E8E2EE] service-card-hover flex flex-col justify-between group shadow-xs"
             >
               <div>
-                {/* Top Card Icon & Category Label */}
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-11 h-11 rounded-2xl bg-[#32105F]/10 text-[#32105F] flex items-center justify-center group-hover:bg-[#32105F] group-hover:text-white transition-all duration-300">
-                    <Icon name={service.icon} className="w-5 h-5" />
-                  </div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#68636F] bg-[#FAF8F3] px-2.5 py-0.5 rounded-lg border border-[#E8E2EE]">
+                {/* Service Card Image Thumbnail */}
+                <Link to={`/services/${service.slug}`} className="block aspect-[16/10] overflow-hidden relative bg-gray-100">
+                  <img
+                    src={service.heroImage}
+                    alt={service.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className="absolute top-3 left-3 text-[10px] font-extrabold uppercase tracking-wider bg-white/90 backdrop-blur-xs text-[#32105F] px-2.5 py-0.5 rounded-full shadow-xs border border-white/40">
                     {service.categoryName}
                   </span>
+                </Link>
+
+                {/* Content */}
+                <div className="p-5 sm:p-6">
+                  <div className="flex items-center gap-2.5 mb-2.5">
+                    <div className="w-8 h-8 rounded-xl bg-[#32105F]/10 text-[#32105F] flex items-center justify-center shrink-0 group-hover:bg-[#32105F] group-hover:text-white transition-colors duration-300">
+                      <Icon name={service.icon} className="w-4 h-4" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-extrabold text-[#16131B] group-hover:text-[#32105F] transition-colors leading-snug">
+                      <Link to={`/services/${service.slug}`}>
+                        {service.title}
+                      </Link>
+                    </h3>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed mb-3">
+                    {service.shortDescription}
+                  </p>
+
+                  {/* Bullet Highlights */}
+                  <ul className="space-y-1 text-xs text-[#16131B] font-medium border-t border-[#E8E2EE] pt-3">
+                    {service.features.slice(0, 3).map((feat, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#D7A72E]"></span>
+                        <span className="truncate">{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-
-                {/* Service Title */}
-                <h3 className="text-lg font-extrabold text-[#16131B] group-hover:text-[#32105F] transition-colors mb-1.5">
-                  <Link to={`/services/${service.slug}`}>
-                    {service.title}
-                  </Link>
-                </h3>
-
-                {/* Service Short Description */}
-                <p className="text-xs sm:text-sm text-[#68636F] leading-relaxed mb-4">
-                  {service.shortDescription}
-                </p>
-
-                {/* Features Bullets */}
-                <ul className="space-y-1 mb-5 text-xs text-[#16131B] font-medium border-t border-[#E8E2EE] pt-3">
-                  {service.features.slice(0, 3).map((feat, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#D7A72E]"></span>
-                      <span className="truncate">{feat}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               {/* Bottom Action Footer */}
-              <div className="pt-3.5 border-t border-[#E8E2EE] flex items-center justify-between gap-2.5">
+              <div className="p-5 pt-0 flex items-center justify-between gap-2.5">
                 <Button
                   to={`/services/${service.slug}`}
                   variant="primary"
