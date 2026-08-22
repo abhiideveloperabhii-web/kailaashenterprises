@@ -88,8 +88,8 @@ export default function About() {
             <div className="lg:col-span-5 mt-4 lg:mt-0">
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-[#FAF8F3] max-w-sm sm:max-w-md mx-auto">
                 <img
-                  src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=1000&q=80"
-                  alt="Kailaash master joinery"
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
+                  alt="Kailaash Enterprises master craftsmanship & woodwork team"
                   className="w-full aspect-[4/5] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#170A2C]/80 via-transparent to-transparent flex items-end p-6">
@@ -112,7 +112,6 @@ export default function About() {
           <SectionHeading
             badge="Guiding Values"
             title="The Standards We Live By"
-            subtitle="Four unwavering pillars that define how we work, communicate, and deliver every project."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
