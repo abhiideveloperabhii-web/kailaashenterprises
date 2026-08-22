@@ -1,25 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- 5-Person Team Collaboration Swirl Emblem -->
   <g transform="translate(50, 50)">
     <!-- Person 1: Top (Sky Blue) -->
     <g transform="rotate(0)">
       <circle cx="0" cy="-34" r="7.5" fill="#0099DA" />
       <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#0099DA" />
     </g>
+
     <!-- Person 2: Top-Right (Emerald Green) -->
     <g transform="rotate(72)">
       <circle cx="0" cy="-34" r="7.5" fill="#00A859" />
       <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#00A859" />
     </g>
+
     <!-- Person 3: Bottom-Right (Golden Orange) -->
     <g transform="rotate(144)">
       <circle cx="0" cy="-34" r="7.5" fill="#F7941D" />
       <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#F7941D" />
     </g>
+
     <!-- Person 4: Bottom-Left (Crimson Red) -->
     <g transform="rotate(216)">
       <circle cx="0" cy="-34" r="7.5" fill="#C1272D" />
       <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#C1272D" />
     </g>
+
     <!-- Person 5: Top-Left (Magenta Pink) -->
     <g transform="rotate(288)">
       <circle cx="0" cy="-34" r="7.5" fill="#E6007E" />

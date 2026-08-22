@@ -5,6 +5,7 @@ import { getWhatsAppUrl } from '../../utils/whatsapp';
 import Icon from '../common/Icon';
 import Button from '../common/Button';
 import Container from '../common/Container';
+import Logo from '../common/Logo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,20 +82,7 @@ export default function Navbar() {
       }`}>
         <Container size="large" className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#32105F] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-              <span className="text-white font-extrabold text-lg tracking-tighter">K</span>
-              <span className="text-[#D7A72E] font-black text-lg">.</span>
-            </div>
-            <div>
-              <div className="text-base sm:text-lg font-extrabold tracking-tight text-[#32105F] leading-none">
-                KAILAASH
-              </div>
-              <div className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-[#68636F] uppercase mt-0.5">
-                ENTERPRISES
-              </div>
-            </div>
-          </Link>
+          <Logo theme="light" showTagline={false} size="md" />
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-1">

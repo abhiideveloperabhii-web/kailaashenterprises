@@ -1,13 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
-  <g>
-    <!-- Brand Icon Monogram -->
-    <rect x="4" y="6" width="48" height="48" rx="12" fill="#32105F" />
-    <path d="M20 18V42" stroke="#FAF8F3" stroke-width="4.5" stroke-linecap="round" />
-    <path d="M40 20L26 30L42 42" stroke="#D7A72E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="34" cy="25" r="2.5" fill="#FAF8F3" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- 5-Person Team Collaboration Swirl Emblem -->
+  <g transform="translate(42, 40) scale(0.68)">
+    <!-- Person 1: Top (Sky Blue) -->
+    <g transform="rotate(0)">
+      <circle cx="0" cy="-34" r="7.5" fill="#0099DA" />
+      <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#0099DA" />
+    </g>
+    <!-- Person 2: Top-Right (Emerald Green) -->
+    <g transform="rotate(72)">
+      <circle cx="0" cy="-34" r="7.5" fill="#00A859" />
+      <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#00A859" />
+    </g>
+    <!-- Person 3: Bottom-Right (Golden Orange) -->
+    <g transform="rotate(144)">
+      <circle cx="0" cy="-34" r="7.5" fill="#F7941D" />
+      <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#F7941D" />
+    </g>
+    <!-- Person 4: Bottom-Left (Crimson Red) -->
+    <g transform="rotate(216)">
+      <circle cx="0" cy="-34" r="7.5" fill="#C1272D" />
+      <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#C1272D" />
+    </g>
+    <!-- Person 5: Top-Left (Magenta Pink) -->
+    <g transform="rotate(288)">
+      <circle cx="0" cy="-34" r="7.5" fill="#E6007E" />
+      <path d="M-13 -22 C-13 -13 0 -13 0 0 C7 -6 16 -12 13 -22 C9 -26 -9 -26 -13 -22 Z" fill="#E6007E" />
+    </g>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="82" y1="14" x2="82" y2="66" stroke="#4A2A6B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Brand Typography -->
+  <g transform="translate(94, 0)">
+    <!-- KAILAASH Main Title -->
+    <text x="0" y="36" fill="#170A2C" font-family="'Plus Jakarta Sans', 'Manrope', sans-serif" font-size="28" font-weight="900" letter-spacing="0.04em">KAILAASH</text>
     
-    <!-- Brand Name Text -->
-    <text x="64" y="31" fill="#32105F" font-family="'Manrope', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.02em">KAILAASH</text>
-    <text x="64" y="47" fill="#68636F" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.18em">ENTERPRISES</text>
+    <!-- ENTERPRISES with Gold Accent Lines -->
+    <line x1="1" y1="48" x2="16" y2="48" stroke="#C59228" stroke-width="2" stroke-linecap="round" />
+    <text x="24" y="52" fill="#C59228" font-family="'Plus Jakarta Sans', 'Manrope', sans-serif" font-size="12" font-weight="800" letter-spacing="0.22em">ENTERPRISES</text>
+    <line x1="168" y1="48" x2="183" y2="48" stroke="#C59228" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Tagline -->
+    <text x="2" y="66" fill="#170A2C" font-family="'Manrope', sans-serif" font-size="7.5" font-weight="800" letter-spacing="0.14em">QUALITY WORK. LASTING IMPRESSION.</text>
   </g>
 </svg>

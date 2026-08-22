@@ -4,6 +4,7 @@ import { COMPANY } from '../../data/company';
 import { getWhatsAppUrl, getSiteVisitUrl } from '../../utils/whatsapp';
 import Icon from '../common/Icon';
 import Container from '../common/Container';
+import Logo from '../common/Logo';
 
 export default function Footer() {
   return (
@@ -18,20 +19,7 @@ export default function Footer() {
           
           {/* Column 1: Brand & 5-Line Business Overview (Span 5 on Desktop) */}
           <div className="lg:col-span-5 space-y-3">
-            <Link to="/" className="inline-flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-xl bg-[#32105F] border border-[#D7A72E]/40 flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
-                <span className="text-white font-black text-base">K</span>
-                <span className="text-[#D7A72E] font-black text-base">.</span>
-              </div>
-              <div>
-                <div className="text-base font-extrabold tracking-tight text-white leading-none">
-                  KAILAASH
-                </div>
-                <div className="text-[9px] font-bold tracking-[0.18em] text-[#D7A72E] uppercase mt-0.5">
-                  ENTERPRISES
-                </div>
-              </div>
-            </Link>
+            <Logo theme="dark" showTagline={true} size="md" />
 
             {/* 5-Line Business Overview */}
             <div className="text-xs text-[#C4B5D4] leading-relaxed space-y-1 max-w-md">
