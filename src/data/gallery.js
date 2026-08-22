@@ -42,7 +42,7 @@ export const GALLERY_ITEMS = [
     category: "carpentry",
     categoryLabel: "Custom Woodwork",
     location: "Magarpatta City, Pune",
-    image: "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
     description: "Geometric CNC routed partition and rich natural teak wood finish with satin PU polish."
   },
   {

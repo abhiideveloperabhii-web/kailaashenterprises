@@ -19,11 +19,11 @@ export const SERVICES = [
     longDescription: "From intricate wooden fluted panels to custom cabinetry and architectural woodwork, our master carpenters bring drawings to reality with high-grade marine plywood, premium teak, MDF, and designer laminates. We ensure millimeter precision, seamless joints, and durable hardware fittings.",
     icon: "Hammer",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
     galleryImages: [
-      "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
       "Custom wall paneling & fluted wooden accents",
