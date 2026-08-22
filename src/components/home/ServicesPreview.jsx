@@ -20,7 +20,6 @@ export default function ServicesPreview() {
         <SectionHeading
           badge="End-to-End Capabilities"
           title="Everything You Need. One Trusted Team."
-          subtitle="From custom woodwork to commercial facility management, we deliver dependable workmanship across Pune."
         />
 
         {/* Category Switcher Tabs */}
