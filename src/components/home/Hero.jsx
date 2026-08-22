@@ -93,47 +93,86 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Compact, Proportionate Hero Visual */}
+          {/* Right Column: 2x2 All-Services Combo Collage Card */}
           <div className="lg:col-span-5 relative mt-2 sm:mt-4 lg:mt-0 flex justify-center">
-            <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[360px] lg:max-w-[340px] xl:max-w-[380px]">
+            <div className="bg-white p-2.5 sm:p-3.5 rounded-3xl border border-[#E8E2EE] shadow-lg w-full max-w-[300px] sm:max-w-[360px] md:max-w-[380px] lg:max-w-[360px] xl:max-w-[400px] space-y-2 sm:space-y-2.5">
               
-              {/* Compact Visual Image Card */}
-              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-md border-2 sm:border-4 border-white bg-[#FAF8F3] aspect-[4/3] group">
-                <img
-                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
-                  alt="Kailaash Enterprises modular kitchens and fine woodwork in Pune"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#170A2C]/85 via-transparent to-transparent"></div>
+              {/* 2x2 Services Combo Collage Grid */}
+              <div className="grid grid-cols-2 gap-1.5 sm:gap-2">
                 
-                {/* Bottom Overlay Label */}
-                <div className="absolute bottom-2.5 left-3 right-3 text-white">
-                  <div className="text-[9px] font-bold uppercase tracking-widest text-[#D7A72E]">
-                    Precision Craftsmanship
-                  </div>
-                  <div className="text-xs sm:text-sm font-extrabold leading-tight">
-                    Modular Kitchens & Interiors
-                  </div>
+                {/* Tile 1: Modular Kitchens */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                  <img
+                    src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80"
+                    alt="Modular Kitchens in Pune"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-1.5 left-2 text-[9px] sm:text-[11px] font-extrabold text-white">
+                    Modular Kitchens
+                  </span>
                 </div>
+
+                {/* Tile 2: Custom Woodwork */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                  <img
+                    src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=500&q=80"
+                    alt="Custom Woodwork & Fine Joinery in Pune"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-1.5 left-2 text-[9px] sm:text-[11px] font-extrabold text-white">
+                    Custom Woodwork
+                  </span>
+                </div>
+
+                {/* Tile 3: Painting & Wall Finishes */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                  <img
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"
+                    alt="Interior & Exterior Painting in Pune"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-1.5 left-2 text-[9px] sm:text-[11px] font-extrabold text-white">
+                    Painting & Finishes
+                  </span>
+                </div>
+
+                {/* Tile 4: Facility & Technical */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                  <img
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
+                    alt="Corporate Facility Support in Pune"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-1.5 left-2 text-[9px] sm:text-[11px] font-extrabold text-white">
+                    Facility & Staffing
+                  </span>
+                </div>
+
               </div>
 
-              {/* Floating Quality Badge (Clean on all devices) */}
-              <div className="absolute -bottom-2.5 left-2 sm:-left-3 bg-white px-2.5 py-1 rounded-xl shadow-md border border-[#E8E2EE] flex items-center gap-1.5">
-                <div className="w-5 h-5 rounded-md bg-[#32105F] text-[#D7A72E] flex items-center justify-center shrink-0">
-                  <Icon name="ShieldCheck" className="w-3 h-3" />
+              {/* Bottom Trust & Service Location Bar */}
+              <div className="p-2 sm:p-2.5 rounded-2xl bg-[#170A2C] text-white flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-lg bg-[#D7A72E]/20 text-[#D7A72E] flex items-center justify-center shrink-0">
+                    <Icon name="ShieldCheck" className="w-3.5 h-3.5" />
+                  </div>
+                  <div>
+                    <div className="text-[9px] font-extrabold text-[#D7A72E] uppercase leading-none">
+                      Complete Execution Team
+                    </div>
+                    <div className="text-[10px] sm:text-[11px] font-bold text-white/95 mt-0.5">
+                      Khardi, Pune • Serving All Areas
+                    </div>
+                  </div>
                 </div>
-                <div className="text-left leading-none">
-                  <div className="text-[10px] font-extrabold text-[#16131B]">100% Quality</div>
-                  <div className="text-[8px] text-[#68636F]">Verified Materials</div>
-                </div>
-              </div>
 
-              {/* Floating Location Badge */}
-              <div className="absolute -top-2 right-2 sm:-right-2 bg-white px-2 py-1 rounded-xl shadow-md border border-[#E8E2EE] flex items-center gap-1">
-                <Icon name="MapPin" className="w-3 h-3 text-[#D7A72E]" />
-                <div className="text-left leading-none">
-                  <div className="text-[10px] font-bold text-[#16131B]">Khardi, Pune</div>
-                </div>
+                <span className="text-[9px] font-bold bg-white/10 px-2 py-0.5 rounded-md text-[#D7A72E] shrink-0 hidden sm:inline">
+                  100% Quality
+                </span>
               </div>
 
             </div>
