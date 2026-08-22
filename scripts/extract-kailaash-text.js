@@ -1,15 +1,16 @@
 import sharp from 'sharp';
 
-async function extractKailaashText() {
+async function fixKailaashText() {
   const inputPath = 'src/assets/logo1.jpeg';
   const image = sharp(inputPath);
   const metadata = await image.metadata();
 
-  // Crop specifically to the "Kailaash ENTERPRISES" text portion (bottom 42% of the image)
-  const topCrop = Math.round(metadata.height * 0.54);
-  const leftCrop = Math.round(metadata.width * 0.04);
-  const width = Math.round(metadata.width * 0.92);
-  const height = Math.round(metadata.height * 0.40);
+  // Specifically crop ONLY the letters "Kailaash ENTERPRISES", starting below the KE swoosh
+  // Kailaash letters start at ~61% of total height
+  const topCrop = Math.round(metadata.height * 0.605);
+  const leftCrop = Math.round(metadata.width * 0.05);
+  const width = Math.round(metadata.width * 0.90);
+  const height = Math.round(metadata.height * 0.35); // through the bottom of ENTERPRISES
 
   const { data, info } = await image
     .extract({ left: leftCrop, top: topCrop, width, height })
@@ -36,13 +37,13 @@ async function extractKailaashText() {
       alpha = Math.max(0, Math.min(255, Math.round(255 * (1 - t))));
     }
 
-    // Light Theme (Original Sapphire Navy + Gold Lines, 100% transparent bg)
+    // Light Theme
     lightBuf[i] = r;
     lightBuf[i + 1] = g;
     lightBuf[i + 2] = b;
     lightBuf[i + 3] = alpha;
 
-    // Dark Theme (Convert Navy text to White, keep Gold lines)
+    // Dark Theme (Navy to White, keep Gold)
     const isBlueNavy = (b > r + 15 && b > g) || (r < 70 && g < 90 && b < 150);
     if (isBlueNavy && alpha > 0) {
       darkBuf[i] = 255;
@@ -77,7 +78,7 @@ async function extractKailaashText() {
     .png({ compressionLevel: 9 })
     .toFile('public/kailaash-text-dark.png');
 
-  console.log('Kailaash text graphic extracted with 100% transparency and exact typography & colors!');
+  console.log('Fixed Kailaash text: all stray marks from KE swooshes removed cleanly!');
 }
 
-extractKailaashText().catch(console.error);
+fixKailaashText().catch(console.error);
