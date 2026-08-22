@@ -38,16 +38,16 @@ export default function FeaturedServices() {
     },
     {
       badge: "Commercial Solutions",
-      title: "Facility support that keeps your business moving.",
-      subtitle: "End-to-end verified workforce solutions for corporate offices, IT parks, and residential complexes across Pune. From junior office assistants to on-demand technical maintenance crews.",
+      title: "Corporate Support Staff Provide.",
+      subtitle: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80",
       bullets: [
-        "Police-verified corporate office assistants & pantry staff",
-        "Flexible monthly commercial contracts with instant replacement",
-        "HVAC, electrical, plumbing & facility maintenance under one roof"
+        "Accountant & Data Entry Operators for office operations",
+        "Licensed Electricians & Master Plumbers for technical maintenance",
+        "Police-verified Janitors, Housekeeping & Pantry Boys"
       ],
       link: "/services/corporate-facility-support",
-      serviceName: "Corporate Support Staffing & Facility",
+      serviceName: "Corporate Support Staffing",
       reversed: false,
     }
   ];

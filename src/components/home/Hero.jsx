@@ -36,7 +36,7 @@ export default function Hero() {
               </h1>
               
               <p className="text-xs sm:text-sm md:text-base text-[#68636F] leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Custom carpentry, modular kitchens, designer wardrobes, residential painting, and commercial facility maintenance in Pune.
+                Custom carpentry, modular kitchens, designer wardrobes, residential painting, and corporate support staffing in Pune.
               </p>
             </div>
 
@@ -139,16 +139,16 @@ export default function Hero() {
                   </span>
                 </div>
 
-                {/* Tile 4: Facility & Technical */}
+                {/* Tile 4: Corporate Support Staff */}
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
                   <img
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
-                    alt="Corporate Facility Support in Pune"
+                    alt="Corporate Support Staff in Pune"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
                   <span className="absolute bottom-1.5 left-2 text-[9px] sm:text-[11px] font-extrabold text-white">
-                    Facility & Staffing
+                    Corporate Staffing
                   </span>
                 </div>
 

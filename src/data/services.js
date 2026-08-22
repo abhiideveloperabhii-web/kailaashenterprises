@@ -2,7 +2,7 @@ export const SERVICE_CATEGORIES = [
   { id: "all", name: "All Services" },
   { id: "carpentry", name: "Carpentry & Interiors" },
   { id: "painting", name: "Painting" },
-  { id: "facility", name: "Facility Services" },
+  { id: "facility", name: "Corporate Support Staff" },
   { id: "technical", name: "AC & Technical" },
 ];
 
@@ -217,16 +217,16 @@ export const SERVICES = [
     ]
   },
 
-  // --- CATEGORY C: FACILITY & CORPORATE SUPPORT ---
+  // --- CATEGORY C: CORPORATE SUPPORT STAFF ---
   {
     id: "corporate-facility-support",
     slug: "corporate-facility-support",
-    title: "Corporate Support & Facility Staffing",
+    title: "Corporate Support Staffing",
     category: "facility",
-    categoryName: "Facility Services",
-    tagline: "Trained workforce solutions for corporate offices, IT parks, and residential complexes",
-    shortDescription: "Deployment of corporate support staff, accountants, data entry operators, janitors, and pantry staff in Pune.",
-    longDescription: "Kailaash Enterprises delivers dependable facility management staffing for corporate offices, IT companies, co-working spaces, and commercial establishments in Pune. We provide verified, trained, and disciplined personnel on flexible monthly contract models.",
+    categoryName: "Corporate Support Staff",
+    tagline: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
+    shortDescription: "Corporate Support Staff Provide – Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
+    longDescription: "Kailaash Enterprises delivers dependable corporate workforce staffing for offices, IT parks, commercial establishments, and institutions in Pune. We provide verified, trained, and disciplined personnel including Accountants, Data Entry Operators, Electricians, Plumbers, Janitors, and Pantry Boys on flexible monthly contract models.",
     icon: "Users",
     featured: true,
     heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
@@ -235,11 +235,11 @@ export const SERVICES = [
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
     ],
     features: [
-      "Corporate support staff & office assistants",
-      "Junior accountants & billing personnel",
-      "Data entry operators & front-desk coordinators",
-      "Trained pantry boys & hospitality staff",
-      "Commercial housekeeping & janitorial crews"
+      "Accountant & Junior Billing Personnel",
+      "Data Entry Operators & Office Coordinators",
+      "Licensed Electricians & Master Plumbers",
+      "Janitors & Commercial Housekeeping",
+      "Pantry Boys & Office Hospitality Staff"
     ],
     inclusions: [
       "Background-verified & police-verified candidates",

@@ -139,7 +139,7 @@ export default function About() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                     <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
-                      Facility & Technical
+                      Corporate Staffing
                     </span>
                   </div>
 
