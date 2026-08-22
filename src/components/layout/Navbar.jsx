@@ -81,8 +81,8 @@ export default function Navbar() {
           : 'bg-[#FAF8F3] py-3 border-b border-[#E8E2EE]'
       }`}>
         <Container size="large" className="flex items-center justify-between">
-          {/* Logo */}
-          <Logo theme="light" showTagline={false} size="md" />
+          {/* Logo (Shifted right for balanced breathing room) */}
+          <Logo theme="light" showTagline={false} size="md" className="ml-1 sm:ml-2.5 md:ml-4" />
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-1">
