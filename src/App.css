@@ -1,0 +1,41 @@
+/* Custom sleek animations and utility classes */
+
+@keyframes pulseSlight {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse-slight {
+  animation: pulseSlight 2.5s ease-in-out infinite;
+}
+
+/* Ensure smooth image rendering and no layout shifts */
+img {
+  content-visibility: auto;
+}
+
+/* Remove unwanted mobile tap highlight */
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --brand-purple: #32105f;
+  --brand-purple-dark: #170a2c;
+  --brand-gold: #d7a72e;
+  --brand-ivory: #faf8f3;
+  --text-primary: #16131b;
+  --text-muted: #68636f;
+  --border: #e8e2ee;
+  --card-bg: #ffffff;
+}
+
+@theme {
+  --color-brand-purple: #32105f;
+  --color-brand-purple-dark: #170a2c;
+  --color-brand-gold: #d7a72e;
+  --color-brand-ivory: #faf8f3;
+  --color-text-primary: #16131b;
+  --color-text-muted: #68636f;
+  --color-border-subtle: #e8e2ee;
+  
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Base custom styles */
+body {
+  background-color: #FAF8F3;
+  color: #16131B;
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B5D4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32105F;
+}
+
+/* Subtle glassmorphism */
+.glass-nav {
+  background: rgba(250, 248, 243, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(232, 226, 238, 0.8);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 226, 238, 0.7);
+}
+
+.glass-dark {
+  background: rgba(23, 10, 44, 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(215, 167, 46, 0.15);
+}
+
+/* Shimmer gradient effect for gold accents */
+.gold-shimmer {
+  background: linear-gradient(135deg, #D7A72E 0%, #F5D77F 50%, #C39220 100%);
+}
+
+.purple-gradient {
+  background: linear-gradient(135deg, #32105F 0%, #170A2C 100%);
+}
+
+/* Smooth card transitions */
+.service-card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+.service-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px -8px rgba(50, 16, 95, 0.09);
+  border-color: rgba(50, 16, 95, 0.3);
+}
+
+/* Tap highlight remove for mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

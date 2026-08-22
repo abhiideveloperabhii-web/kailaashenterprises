@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <g>
+    <!-- Brand Icon Monogram -->
+    <rect x="4" y="6" width="48" height="48" rx="12" fill="#32105F" />
+    <path d="M20 18V42" stroke="#FAF8F3" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M40 20L26 30L42 42" stroke="#D7A72E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="34" cy="25" r="2.5" fill="#FAF8F3" />
+    
+    <!-- Brand Name Text -->
+    <text x="64" y="31" fill="#32105F" font-family="'Manrope', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.02em">KAILAASH</text>
+    <text x="64" y="47" fill="#68636F" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.18em">ENTERPRISES</text>
+  </g>
+</svg>
