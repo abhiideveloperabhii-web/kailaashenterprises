@@ -84,21 +84,82 @@ export default function About() {
               </div>
             </div>
 
-            {/* Story Visual */}
+            {/* Story Visual: All Services Combo Collage */}
             <div className="lg:col-span-5 mt-4 lg:mt-0">
-              <div className="relative rounded-3xl overflow-hidden shadow-xl border-4 border-[#FAF8F3] max-w-sm sm:max-w-md mx-auto">
-                <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
-                  alt="Kailaash Enterprises master craftsmanship & woodwork team"
-                  className="w-full aspect-[4/5] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#170A2C]/80 via-transparent to-transparent flex items-end p-6">
-                  <div className="text-white">
-                    <div className="text-[10px] font-bold text-[#D7A72E] uppercase">Founder & Operations</div>
-                    <div className="text-lg font-black">{COMPANY.founder}</div>
-                    <div className="text-xs text-[#C4B5D4] mt-0.5">{COMPANY.location.fullAddress}</div>
+              <div className="bg-[#FAF8F3] p-3 sm:p-4 rounded-3xl border border-[#E8E2EE] shadow-lg max-w-sm sm:max-w-md mx-auto space-y-3">
+                
+                {/* 2x2 Services Combo Collage Grid */}
+                <div className="grid grid-cols-2 gap-2 sm:gap-2.5">
+                  
+                  {/* Tile 1: Modular Kitchens */}
+                  <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                    <img
+                      src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80"
+                      alt="Modular Kitchens"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
+                      Modular Kitchens
+                    </span>
+                  </div>
+
+                  {/* Tile 2: Custom Woodwork */}
+                  <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                    <img
+                      src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=500&q=80"
+                      alt="Custom Woodwork"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
+                      Custom Woodwork
+                    </span>
+                  </div>
+
+                  {/* Tile 3: Painting & Wall Finishes */}
+                  <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                    <img
+                      src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"
+                      alt="Painting Services"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
+                      Painting & Finishes
+                    </span>
+                  </div>
+
+                  {/* Tile 4: Facility Staffing */}
+                  <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group shadow-xs">
+                    <img
+                      src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
+                      alt="Corporate Facility Support"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                    <span className="absolute bottom-1.5 left-2 text-[10px] sm:text-xs font-extrabold text-white">
+                      Facility & Technical
+                    </span>
+                  </div>
+
+                </div>
+
+                {/* Bottom Trust & Founder Card */}
+                <div className="p-3 rounded-2xl bg-[#170A2C] text-white flex items-center justify-between gap-3">
+                  <div>
+                    <div className="text-[9px] font-bold text-[#D7A72E] uppercase tracking-wider">
+                      Turnkey Solutions In Pune
+                    </div>
+                    <div className="text-xs sm:text-sm font-extrabold">
+                      {COMPANY.founder} <span className="text-[10px] text-gray-400 font-normal">(Managing Director)</span>
+                    </div>
+                  </div>
+                  <div className="w-8 h-8 rounded-xl bg-[#D7A72E]/20 text-[#D7A72E] flex items-center justify-center shrink-0">
+                    <Icon name="ShieldCheck" className="w-4 h-4" />
                   </div>
                 </div>
+
               </div>
             </div>
 
