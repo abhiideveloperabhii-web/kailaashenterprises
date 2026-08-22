@@ -43,17 +43,16 @@ export default function Services() {
   return (
     <div className="bg-[#FAF8F3]">
       {/* Services Hero */}
-      <section className="bg-[#170A2C] text-white py-12 sm:py-16 md:py-20 relative overflow-hidden border-b border-[#32105F]">
-        <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#32105F]/50 rounded-full blur-3xl pointer-events-none -z-0"></div>
-        <Container size="large" className="relative z-10 text-center max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#D7A72E] text-xs font-extrabold uppercase tracking-wider mb-3 border border-[#D7A72E]/30">
+      <section className="bg-[#170A2C] text-white py-6 sm:py-8 md:py-10 relative overflow-hidden border-b border-[#32105F]">
+        <div className="absolute top-0 right-1/4 w-72 h-72 bg-[#32105F]/40 rounded-full blur-3xl pointer-events-none -z-0"></div>
+        <Container size="large" className="relative z-10 text-center max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[#D7A72E] text-[11px] sm:text-xs font-extrabold uppercase tracking-wider mb-2 border border-[#D7A72E]/30">
             <Icon name="Wrench" className="w-3.5 h-3.5" />
             <span>Complete Service Catalog</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            Comprehensive Services. <br />
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-tight">
+            Comprehensive Services
           </h1>
-
         </Container>
       </section>
 
