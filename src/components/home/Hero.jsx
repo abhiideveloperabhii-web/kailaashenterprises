@@ -7,12 +7,12 @@ import Container from '../common/Container';
 
 export default function Hero() {
   return (
-    <section className="relative pt-6 pb-10 sm:pt-10 sm:pb-14 md:pt-14 md:pb-20 overflow-hidden bg-gradient-to-b from-[#FAF8F3] via-[#FAF8F3] to-[#F3EEF8]">
+    <section className="relative pt-3 pb-4 sm:pt-4 sm:pb-6 md:pt-6 md:pb-8 overflow-hidden bg-gradient-to-b from-[#FAF8F3] via-[#FAF8F3] to-[#F3EEF8]">
       {/* Subtle background ambient glow */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[550px] h-[280px] bg-[#32105F]/5 rounded-full blur-3xl pointer-events-none -z-0"></div>
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-[550px] h-[240px] bg-[#32105F]/5 rounded-full blur-3xl pointer-events-none -z-0"></div>
 
       <Container size="large" className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
           
           {/* Left Column: Headlines & High-Conversion CTAs */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5 text-center lg:text-left">
