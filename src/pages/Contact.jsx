@@ -34,10 +34,10 @@ export default function Contact() {
       url: getServiceInquiryUrl("Painting & Wall Finishes"),
     },
     {
-      title: "Corporate Facility & Staffing",
-      desc: "Verified office assistants, technicians, janitorial & maintenance teams.",
+      title: "Corporate Support Staff Provide",
+      desc: "Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys.",
       icon: "Building",
-      url: getServiceInquiryUrl("Corporate Support Staffing & Facility"),
+      url: getServiceInquiryUrl("Corporate Support Staff Provide - Accountant, Data Entry Operators, Electrician, Plumbers, Janitors, Pantry Boys"),
     },
     {
       title: "Carpentry Repairs & Joinery",
