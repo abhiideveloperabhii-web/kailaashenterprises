@@ -14,17 +14,17 @@ export default function Logo({
     <Link 
       to="/" 
       aria-label="Kailaash Enterprises Home" 
-      className={`inline-flex items-center select-none transition-transform duration-300 active:scale-95 group ${className}`}
+      className={`inline-flex items-center select-none transition-transform duration-300 active:scale-95 group shrink-0 ${className}`}
     >
       <img
         src={isDark ? logoDark : logoLight}
-        alt="Kailaash Enterprises"
+        alt="Kailaash Enterprises Logo"
         className={`object-contain transition-transform duration-300 group-hover:scale-[1.03] ${
           size === 'sm'
-            ? 'h-9 sm:h-10 w-auto max-w-[140px]'
+            ? 'h-8 sm:h-9 w-auto max-w-[130px]'
             : size === 'lg'
-            ? 'h-14 sm:h-16 w-auto max-w-[240px]'
-            : 'h-11 sm:h-13 md:h-14 w-auto max-w-[180px] sm:max-w-[210px]'
+            ? 'h-13 sm:h-16 w-auto max-w-[220px]'
+            : 'h-10 sm:h-12 md:h-13 lg:h-14 w-auto max-w-[160px] sm:max-w-[190px] md:max-w-[220px]'
         }`}
       />
     </Link>
