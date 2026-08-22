@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoImg from '../../assets/logo1.jpeg';
+import keLogoImg from '../../assets/ke-logo.png';
 
 export default function Logo({
   theme = 'light', // 'light' | 'dark'
@@ -13,18 +13,16 @@ export default function Logo({
     <Link to="/" className={`inline-flex items-center gap-2.5 sm:gap-3.5 group select-none ${className}`}>
       
       {/* KE Royal Navy & Gold Monogram Emblem */}
-      <div className={`shrink-0 overflow-hidden rounded-xl bg-white border shadow-xs transition-transform duration-300 group-hover:scale-105 flex items-center justify-center ${
+      <div className={`shrink-0 overflow-hidden rounded-xl bg-white border shadow-xs transition-transform duration-300 group-hover:scale-105 flex items-center justify-center p-1 ${
         isDark ? 'border-white/20' : 'border-[#E8E2EE]'
       } ${
-        size === 'sm' ? 'w-8 h-8 p-0.5' : size === 'lg' ? 'w-12 h-12 p-1' : 'w-9 h-9 sm:w-10 sm:h-10 p-0.5'
+        size === 'sm' ? 'w-8 h-8' : size === 'lg' ? 'w-12 h-12' : 'w-9 h-9 sm:w-11 sm:h-11'
       }`}>
-        <div className="w-full h-full overflow-hidden relative flex items-center justify-center">
-          <img
-            src={logoImg}
-            alt="KE Emblem"
-            className="w-[170%] h-[170%] max-w-none object-cover object-top -translate-y-[2px]"
-          />
-        </div>
+        <img
+          src={keLogoImg}
+          alt="KE Monogram Emblem"
+          className="w-full h-full object-contain"
+        />
       </div>
 
       {/* Vertical Divider Line */}
