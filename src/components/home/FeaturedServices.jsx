@@ -44,7 +44,7 @@ export default function FeaturedServices() {
       bullets: [
         "Police-verified corporate office assistants & pantry staff",
         "Flexible monthly commercial contracts with instant replacement",
-        "HVAC, electrical, plumbing & deep cleaning support under one roof"
+        "HVAC, electrical, plumbing & facility maintenance under one roof"
       ],
       link: "/services/corporate-facility-support",
       serviceName: "Corporate Support Staffing & Facility",

@@ -36,7 +36,7 @@ export default function Footer() {
             {/* 5-Line Business Overview */}
             <div className="text-xs text-[#C4B5D4] leading-relaxed space-y-1 max-w-md">
               <p>1. Headquartered in Khardi, Pune, delivering master carpentry and modular kitchens.</p>
-              <p>2. Specialists in custom wardrobes, TV backdrops, painting, and deep cleaning.</p>
+              <p>2. Specialists in custom wardrobes, TV backdrops, and residential painting.</p>
               <p>3. Providing verified corporate staffing and technical facility maintenance.</p>
               <p>4. 100% genuine BWP marine plywood, branded fittings, and precision laser alignment.</p>
               <p className="text-white/90 font-medium">5. Serving homeowners, architects, and businesses across Pune with transparent pricing.</p>

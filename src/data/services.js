@@ -3,7 +3,6 @@ export const SERVICE_CATEGORIES = [
   { id: "carpentry", name: "Carpentry & Interiors" },
   { id: "painting", name: "Painting" },
   { id: "facility", name: "Facility Services" },
-  { id: "cleaning", name: "Deep Cleaning" },
   { id: "technical", name: "AC & Technical" },
 ];
 
@@ -250,37 +249,7 @@ export const SERVICES = [
     ]
   },
 
-  // --- CATEGORY D: DEEP CLEANING SERVICES ---
-  {
-    id: "deep-cleaning-shampooing",
-    slug: "deep-cleaning-shampooing",
-    title: "Deep Cleaning & Upholstery Shampooing",
-    category: "cleaning",
-    categoryName: "Deep Cleaning",
-    tagline: "Industrial-grade steam cleaning, carpet extraction, and sofa revitalization",
-    shortDescription: "Carpet shampooing, sofa & chair injection-extraction cleaning, one-time deep villa/office cleaning.",
-    longDescription: "Restore hygiene and freshness with our commercial cleaning solutions. We use mechanized rotary scrubbers, German injection-extraction shampoo machines, eco-friendly detergents, and sanitizing steamers to eliminate stubborn stains, dust mites, and odors.",
-    icon: "Sparkles",
-    featured: false,
-    heroImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
-    galleryImages: [
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
-    ],
-    features: [
-      "Carpet & rug deep injection-extraction shampooing",
-      "Fabric & leather sofa, recliner, and office chair revitalization",
-      "One-time pre-move or post-renovation deep cleaning",
-      "Intensive kitchen degreasing & bathroom descaling"
-    ],
-    inclusions: [
-      "Eco-friendly anti-bacterial cleaning compounds",
-      "High-power moisture vacuum extraction for fast drying",
-      "Trained uniform staff with industrial equipment",
-      "Complete odor neutralization"
-    ]
-  },
-
-  // --- CATEGORY E: AC & TECHNICAL MAINTENANCE ---
+  // --- CATEGORY D: AC & TECHNICAL MAINTENANCE ---
   {
     id: "ac-repair-installation",
     slug: "ac-repair-installation",

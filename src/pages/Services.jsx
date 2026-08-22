@@ -52,11 +52,8 @@ export default function Services() {
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
             Comprehensive Services. <br />
-            <span className="text-[#D7A72E]">One Trusted Execution Team.</span>
           </h1>
-          <p className="text-sm sm:text-base text-[#C4B5D4] mt-3 leading-relaxed max-w-2xl mx-auto">
-            From artisanal woodwork and modular kitchens to corporate staffing and commercial facility maintenance in Pune.
-          </p>
+
         </Container>
       </section>
 
