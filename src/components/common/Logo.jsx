@@ -10,20 +10,22 @@ export default function Logo({
   const isDark = theme === 'dark';
 
   return (
-    <Link to="/" className={`inline-flex items-center gap-2.5 sm:gap-3.5 group select-none ${className}`}>
+    <Link to="/" className={`inline-flex items-center gap-2.5 sm:gap-3 group select-none ${className}`}>
       
-      {/* KE Royal Navy & Gold Monogram Emblem */}
-      <div className={`shrink-0 overflow-hidden rounded-xl bg-white border shadow-xs transition-transform duration-300 group-hover:scale-105 flex items-center justify-center p-1 ${
-        isDark ? 'border-white/20' : 'border-[#E8E2EE]'
-      } ${
-        size === 'sm' ? 'w-8 h-8' : size === 'lg' ? 'w-12 h-12' : 'w-9 h-9 sm:w-11 sm:h-11'
-      }`}>
-        <img
-          src={keLogoImg}
-          alt="KE Monogram Emblem"
-          className="w-full h-full object-contain"
-        />
-      </div>
+      {/* Direct KE Monogram Image (No Background Box, No Border) */}
+      <img
+        src={keLogoImg}
+        alt="Kailaash Enterprises KE Logo"
+        className={`shrink-0 object-contain transition-transform duration-300 group-hover:scale-105 ${
+          isDark ? 'brightness-110' : 'mix-blend-multiply'
+        } ${
+          size === 'sm' 
+            ? 'h-8 sm:h-9 w-auto max-w-[50px]' 
+            : size === 'lg' 
+            ? 'h-13 sm:h-15 w-auto max-w-[80px]' 
+            : 'h-10 sm:h-12 w-auto max-w-[65px]'
+        }`}
+      />
 
       {/* Vertical Divider Line */}
       <div className={`w-[1.5px] self-stretch rounded-full my-0.5 ${
