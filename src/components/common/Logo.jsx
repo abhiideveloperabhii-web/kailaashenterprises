@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import keIconLight from '../../assets/ke-icon.png';
 import keIconDark from '../../assets/ke-icon-dark.png';
 import kailaashTextLight from '../../assets/kailaash-text.png';
@@ -11,12 +11,27 @@ export default function Logo({
   className = ''
 }) {
   const isDark = theme === 'dark';
+  const navigate = useNavigate();
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (window.location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => {
+        window.location.reload();
+      }, 100);
+    } else {
+      navigate('/');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <Link 
       to="/" 
+      onClick={handleLogoClick}
       aria-label="Kailaash Enterprises Home" 
-      className={`inline-flex items-center gap-1.5 sm:gap-2.5 group select-none transition-transform duration-300 active:scale-95 shrink min-w-0 ${className}`}
+      className={`inline-flex items-center gap-1.5 sm:gap-2.5 group select-none transition-transform duration-300 active:scale-95 shrink min-w-0 cursor-pointer ${className}`}
     >
       {/* KE Royal Navy & Gold Monogram Emblem */}
       <img
