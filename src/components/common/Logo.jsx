@@ -16,36 +16,36 @@ export default function Logo({
     <Link 
       to="/" 
       aria-label="Kailaash Enterprises Home" 
-      className={`inline-flex items-center gap-2 sm:gap-3 group select-none transition-transform duration-300 active:scale-95 shrink-0 ${className}`}
+      className={`inline-flex items-center gap-1.5 sm:gap-2.5 group select-none transition-transform duration-300 active:scale-95 shrink min-w-0 ${className}`}
     >
       {/* KE Royal Navy & Gold Monogram Emblem */}
       <img
         src={isDark ? keIconDark : keIconLight}
-        alt="KE Monogram Emblem"
+        alt="KE Emblem"
         className={`object-contain transition-transform duration-300 group-hover:scale-105 shrink-0 ${
           size === 'sm'
-            ? 'h-8 sm:h-9 w-auto'
+            ? 'h-7 sm:h-8 w-auto'
             : size === 'lg'
-            ? 'h-12 sm:h-14 w-auto'
-            : 'h-10 sm:h-11 md:h-12 w-auto'
+            ? 'h-11 sm:h-13 w-auto'
+            : 'h-8 sm:h-10 md:h-11 lg:h-12 w-auto'
         }`}
       />
 
       {/* Vertical Separator Divider */}
-      <div className={`w-[1.5px] self-stretch rounded-full my-0.5 ${
+      <div className={`w-[1px] sm:w-[1.5px] self-stretch rounded-full my-0.5 shrink-0 ${
         isDark ? 'bg-white/25' : 'bg-[#170A2C]/20'
       }`}></div>
 
-      {/* Exact Brand Typography Graphic (Original Serif Font & Gold Wings) */}
+      {/* Exact Brand Typography Graphic */}
       <img
         src={isDark ? kailaashTextDark : kailaashTextLight}
         alt="Kailaash Enterprises"
-        className={`object-contain transition-transform duration-300 group-hover:scale-[1.02] shrink-0 ${
+        className={`object-contain transition-transform duration-300 group-hover:scale-[1.02] shrink min-w-0 ${
           size === 'sm'
-            ? 'h-7 sm:h-8 w-auto max-w-[120px]'
+            ? 'h-6 sm:h-7 w-auto max-w-[100px] xs:max-w-[120px]'
             : size === 'lg'
-            ? 'h-10 sm:h-12 w-auto max-w-[200px]'
-            : 'h-8 sm:h-9 md:h-10 w-auto max-w-[140px] sm:max-w-[165px] md:max-w-[185px]'
+            ? 'h-9 sm:h-11 w-auto max-w-[180px] sm:max-w-[210px]'
+            : 'h-6 sm:h-7 md:h-8.5 lg:h-9.5 w-auto max-w-[115px] xs:max-w-[140px] sm:max-w-[170px] md:max-w-[195px]'
         }`}
       />
     </Link>

@@ -12,20 +12,20 @@ export default function Hero() {
       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-[550px] h-[240px] bg-[#32105F]/5 rounded-full blur-3xl pointer-events-none -z-0"></div>
 
       <Container size="large" className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 items-center">
           
           {/* Left Column: Headlines & High-Conversion CTAs */}
-          <div className="lg:col-span-6 space-y-3.5 sm:space-y-4 md:space-y-5 text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-3 sm:space-y-4 md:space-y-5 text-center lg:text-left">
             
             {/* Top Micro Badge */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white border border-[#E8E2EE] shadow-2xs text-[10.5px] sm:text-xs font-extrabold text-[#32105F] mx-auto lg:mx-0">
-              <span className="w-2 h-2 rounded-full bg-[#D7A72E] animate-pulse"></span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white border border-[#E8E2EE] shadow-2xs text-[10px] xs:text-[11px] sm:text-xs font-extrabold text-[#32105F] mx-auto lg:mx-0">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#D7A72E] animate-pulse"></span>
               <span>Pune's Trusted Craftsmanship & Facility Partner</span>
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-1.5 sm:space-y-2 md:space-y-3">
-              <h1 className="text-[26px] sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[54px] font-black text-[#16131B] tracking-tight leading-[1.14]">
+            <div className="space-y-1 sm:space-y-2 md:space-y-3">
+              <h1 className="text-[25px] xs:text-[28px] sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[52px] font-black text-[#16131B] tracking-tight leading-[1.15]">
                 Crafting Spaces. <br className="hidden sm:block" />
                 <span className="text-[#32105F] relative inline-block">
                   Building Trust.
@@ -35,20 +35,20 @@ export default function Hero() {
                 </span>
               </h1>
               
-              <p className="text-xs sm:text-sm md:text-base text-[#68636F] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
+              <p className="text-[12px] sm:text-sm md:text-base text-[#68636F] leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium px-1 sm:px-0">
                 Custom carpentry, modular kitchens, designer wardrobes, residential painting, and corporate support staffing in Pune.
               </p>
             </div>
 
             {/* Action Buttons: 2-Cols on Mobile, Flex Row on Desktop */}
             <div className="pt-0.5 sm:pt-1">
-              <div className="grid grid-cols-2 sm:flex sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-2.5 md:gap-3">
+              <div className="grid grid-cols-2 sm:flex sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-2.5 md:gap-3 max-w-sm sm:max-w-none mx-auto lg:mx-0">
                 <Button
                   href={getWhatsAppUrl("Hello Kailaash Enterprises, I would like to consult about carpentry & interior services.")}
                   variant="whatsapp"
                   size="md"
                   icon="MessageSquare"
-                  className="w-full sm:w-auto text-xs sm:text-sm py-2.5 sm:py-3 px-3.5 sm:px-4 shadow-sm active:scale-95"
+                  className="w-full sm:w-auto text-xs sm:text-sm py-2.5 sm:py-3 px-3 sm:px-4 shadow-sm active:scale-95"
                 >
                   WhatsApp
                 </Button>
@@ -58,7 +58,7 @@ export default function Hero() {
                   variant="primary"
                   size="md"
                   icon="PhoneCall"
-                  className="w-full sm:w-auto text-xs sm:text-sm py-2.5 sm:py-3 px-3.5 sm:px-4 shadow-sm active:scale-95"
+                  className="w-full sm:w-auto text-xs sm:text-sm py-2.5 sm:py-3 px-3 sm:px-4 shadow-sm active:scale-95"
                 >
                   Call Now
                 </Button>
@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
 
             {/* Micro Trust Indicators */}
-            <div className="pt-0.5 sm:pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-y-1.5 gap-x-3.5 sm:gap-x-5 text-[10.5px] sm:text-xs font-bold text-[#68636F]">
+            <div className="pt-0.5 sm:pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-y-1.5 gap-x-3 sm:gap-x-5 text-[10.5px] sm:text-xs font-bold text-[#68636F]">
               <span className="inline-flex items-center gap-1 sm:gap-1.5">
                 <Icon name="CheckCircle2" className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D7A72E]" />
                 Free Site Visit
@@ -93,9 +93,9 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Generous, Prominent 2x2 All-Services Combo Collage Card */}
-          <div className="lg:col-span-6 relative mt-2 sm:mt-4 lg:mt-0 flex justify-center lg:justify-end">
-            <div className="bg-white p-2.5 sm:p-4 md:p-5 rounded-2xl sm:rounded-3xl border border-[#E8E2EE] shadow-lg sm:shadow-xl w-full max-w-[360px] sm:max-w-[440px] md:max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] space-y-2.5 sm:space-y-3">
+          {/* Right Column: 2x2 All-Services Combo Collage Card */}
+          <div className="lg:col-span-6 relative mt-1 sm:mt-3 lg:mt-0 flex justify-center lg:justify-end w-full">
+            <div className="bg-white p-2.5 sm:p-4 md:p-5 rounded-2xl sm:rounded-3xl border border-[#E8E2EE] shadow-md sm:shadow-xl w-full max-w-[360px] sm:max-w-[440px] md:max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] space-y-2 sm:space-y-3">
               
               {/* 2x2 Services Combo Collage Grid */}
               <div className="grid grid-cols-2 gap-1.5 sm:gap-2.5 md:gap-3">
@@ -108,7 +108,7 @@ export default function Hero() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[10px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
+                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
                     Modular Kitchens
                   </span>
                 </div>
@@ -121,7 +121,7 @@ export default function Hero() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[10px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
+                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
                     Custom Woodwork
                   </span>
                 </div>
@@ -134,7 +134,7 @@ export default function Hero() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[10px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
+                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
                     Painting & Finishes
                   </span>
                 </div>
@@ -147,7 +147,7 @@ export default function Hero() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[10px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
+                  <span className="absolute bottom-1.5 left-2 sm:bottom-2 sm:left-2.5 text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm font-black text-white drop-shadow-xs">
                     Corporate Staffing
                   </span>
                 </div>
@@ -156,21 +156,21 @@ export default function Hero() {
 
               {/* Bottom Trust & Service Location Bar */}
               <div className="p-2 sm:p-2.5 md:p-3 rounded-xl sm:rounded-2xl bg-[#170A2C] text-white flex items-center justify-between gap-2 sm:gap-3">
-                <div className="flex items-center gap-2 sm:gap-2.5">
+                <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#D7A72E]/20 text-[#D7A72E] flex items-center justify-center shrink-0">
                     <Icon name="ShieldCheck" className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
-                  <div>
-                    <div className="text-[8.5px] sm:text-[10px] font-extrabold text-[#D7A72E] uppercase tracking-wider leading-none">
+                  <div className="min-w-0 truncate">
+                    <div className="text-[8px] sm:text-[10px] font-extrabold text-[#D7A72E] uppercase tracking-wider leading-none truncate">
                       Complete Execution Team
                     </div>
-                    <div className="text-[11px] sm:text-xs md:text-sm font-bold text-white/95 mt-0.5">
+                    <div className="text-[10px] sm:text-xs md:text-sm font-bold text-white/95 mt-0.5 truncate">
                       Khardi, Pune • Serving All Areas
                     </div>
                   </div>
                 </div>
 
-                <span className="text-[9.5px] sm:text-[10px] font-extrabold bg-white/10 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[#D7A72E] shrink-0 hidden xs:inline sm:inline">
+                <span className="text-[9px] sm:text-[10px] font-extrabold bg-white/10 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[#D7A72E] shrink-0">
                   100% Quality
                 </span>
               </div>
