@@ -35,7 +35,6 @@ export default function GalleryPreview() {
         <SectionHeading
           badge="Verified Portfolio"
           title="Work That Speaks for Itself."
-          subtitle="Explore recent woodworking, modular kitchen, custom furniture, and commercial maintenance projects across Pune."
         />
 
         {/* Filter Tabs */}

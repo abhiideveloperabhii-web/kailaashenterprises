@@ -12,7 +12,6 @@ export default function Process() {
         <SectionHeading
           badge="Disciplined Execution"
           title="From Requirement to Reality."
-          subtitle="Our proven 4-step workflow ensures absolute clarity, zero hidden surprises, and flawless craftsmanship from day one."
         />
 
         {/* 4 Steps Timeline Grid */}

@@ -43,7 +43,6 @@ export default function WhyChooseUs() {
         <SectionHeading
           badge="The Kailaash Advantage"
           title="Why Customers Choose Kailaash"
-          subtitle="We combine the accountability of an established corporate organization with the personalized care of dedicated master craftsmen."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

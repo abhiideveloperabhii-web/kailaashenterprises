@@ -11,9 +11,9 @@ export default function SectionHeading({
   const isDark = theme === 'dark';
 
   return (
-    <div className={`mb-12 md:mb-16 ${centered ? 'text-center mx-auto max-w-3xl' : 'max-w-2xl'} ${className}`}>
+    <div className={`mb-6 sm:mb-8 md:mb-10 ${centered ? 'text-center mx-auto max-w-3xl' : 'max-w-2xl'} ${className}`}>
       {badge && (
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border shadow-xs"
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2.5 sm:mb-3 border shadow-2xs"
              style={{
                backgroundColor: isDark ? 'rgba(215, 167, 46, 0.15)' : 'rgba(50, 16, 95, 0.06)',
                color: isDark ? '#D7A72E' : '#32105F',
@@ -25,19 +25,11 @@ export default function SectionHeading({
       )}
 
       {title && (
-        <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] mb-4 ${
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] ${
           isDark ? 'text-white' : 'text-[#16131B]'
         }`}>
           {title}
         </h2>
-      )}
-
-      {subtitle && (
-        <p className={`text-base sm:text-lg leading-relaxed ${
-          isDark ? 'text-[#C4B5D4]' : 'text-[#68636F]'
-        }`}>
-          {subtitle}
-        </p>
       )}
     </div>
   );

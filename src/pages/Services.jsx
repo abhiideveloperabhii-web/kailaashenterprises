@@ -197,7 +197,6 @@ export default function Services() {
           <SectionHeading
             badge="Frequently Asked"
             title="Service & Execution FAQs"
-            subtitle="Common questions regarding project timelines, materials, site visits, and billing."
           />
 
           <div className="space-y-3 max-w-3xl mx-auto">
